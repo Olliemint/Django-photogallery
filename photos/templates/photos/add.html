@@ -15,16 +15,38 @@
             <div class="col-md-4">
                 <a class="btn btn-dark my-3" href="{% url 'gallery' %}">Go Back</a>
 
-                <div class="card">
-                   <form action="" method="post">
-                    <div class="form-group">
+                <div class="card" id="card">
+                   <form action="" method="post"enctype="multipart/form-data">
+
+                        {% csrf_token %} 
+
                         <div class="form-group m-3">
                             <label>Description</label>
-                            <input class="form-control" type="text" placeholder="enter a description">
+                            <input name="description" type="text" class="form-control" placeholder="enter a description">
                           </div>
+                          <div class="form-group m-3">
+                            <label>Select a category</label>
+                            <select name="category" class="form-control">
+                                <option value="none">Select category...</option>
+                                {% for category in categories %}
+                                <option value="{{  category.id}}">{{  category.name }}</option>
+
+
+
+                                {% endfor %}
+                            </select>
+                          </div>
+                          <div class="form-group m-3">
+                            <label>Create new category</label>
+                            <input name="category_new" class="form-control" type="text" placeholder="Create new category">
+                          </div>
+
+
+                          <div class="form-group m-3">
                         <label>Upload image</label>
-                        <input class="form-control" type="file">
+                        <input name="image" class="form-control" type="file">
                       </div>
+                      <button class="btn btn-primary m-3" type="submit">Submit</button>
 
                    </form> 
                 </div>
