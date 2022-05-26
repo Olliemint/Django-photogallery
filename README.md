@@ -2,7 +2,7 @@
 #### By Oliver Maiyo
 
 # Django-photogallery
-Django app that display images ,image category and also allow single image view and shows image description. a user can also upload images
+Django app that display images ,image category and also allow single image view and shows image description. A user can also upload images
 
 ## User Stories  
 User Can :-
@@ -18,7 +18,7 @@ Need the latest browser to be able to View
 
 Follow this link https://cornygallery.herokuapp.com/
 
-It is hosted by heroku
+It is hosted on heroku
 
 ---
 
@@ -26,16 +26,16 @@ It is hosted by heroku
 To get the project .......  
   
 ##### Clone Repository:  
- ```bash 
+
 clone from this link https://github.com/Olliemint/Django-photogallery.git
-```
+
 ##### Install and activate Virtual Enviroment envgallery  
  ```bash 
 cd project directory  && python3 -m venv penv && source envgallery/bin/activate 
 ```  
 ##### Install Dependencies  
  ```bash 
- pip install -r requirements.txt 
+ pip3 install -r requirements.txt 
 ```  
 ##### Setup Database  
   SetUp Database User,Password, Host then following Command  
@@ -44,7 +44,7 @@ python manage.py makemigrations photo
  ``` 
  Now Migrate  
  ```bash 
- python manage.py migrate 
+ python3 manage.py migrate 
 ```
 ##### Run Application  
  ```bash 
@@ -52,7 +52,7 @@ python manage.py makemigrations photo
 ```
 ##### Test Application  
  ```bash 
- python manage.py test photo
+ python3 manage.py test photo
 ```
 Open the application on your browser `127.0.0.1:8000`.  
   
