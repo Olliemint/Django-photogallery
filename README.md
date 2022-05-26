@@ -27,7 +27,7 @@ To get the project .......
   
 ##### Clone Repository:  
  ```bash 
-
+clone from this link https://github.com/Olliemint/Django-photogallery.git
 ```
 ##### Install and activate Virtual Enviroment envgallery  
  ```bash 
