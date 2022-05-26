@@ -16,7 +16,7 @@ User Can :-
 ## Access the website
 Need the latest browser to be able to View
 
-Follow this link 
+Follow this link https://cornygallery.herokuapp.com/
 
 It is hosted by heroku
 
